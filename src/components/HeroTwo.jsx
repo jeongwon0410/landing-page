@@ -9,8 +9,6 @@ import {
 import ModalNFT from './ModalNFT'
 
 export default function HeroTwo() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-
   return (
     <>
       <Box
@@ -32,7 +30,7 @@ export default function HeroTwo() {
             fontFamily={'ChosunCentennial'}
             color={'orange.500'}
           >
-            Team 귱은...
+            Team 귷은...
             {/* <Text as={'span'} color={'purple.400'}>
               오직 당신만의
             </Text> */}
@@ -46,27 +44,8 @@ export default function HeroTwo() {
             되는 경우 말입니다. 비주류는 그런 알려지지 않은 자신만의 것을 함께
             나누는 공간입니다
           </Text>
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}
-          >
-            <Button
-              bg={'orange.400'}
-              px={6}
-              _hover={{
-                bg: 'orange.500',
-              }}
-              onClick={onOpen}
-            >
-              우리 NFT 미리보기
-            </Button>
-          </Stack>
         </Stack>
       </Box>
-      {isOpen && <ModalNFT isOpen={isOpen} onClose={onClose} />}
     </>
   )
 }

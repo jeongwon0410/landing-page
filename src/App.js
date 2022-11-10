@@ -9,6 +9,7 @@ import HeroTwo from '@components/HeroTwo'
 import ExplainInstall from '@components/ExplainInstall'
 import Footer from '@components/Footer'
 import NavBar from '@components/NavBar'
+import ExplainB from '@components/ExplainB'
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -18,6 +19,7 @@ function App() {
 
       <ExplainInstall />
       <HeroTwo />
+      <ExplainB />
       <Footer />
     </ChakraProvider>
   )

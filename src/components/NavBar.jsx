@@ -49,7 +49,7 @@ export default function NavBar() {
             fontSize={50}
             fontFamily={'ChosunCentennial'}
           >
-            Team 귱
+            Team 귷
           </Text>
         </Flex>
 
@@ -70,7 +70,7 @@ export default function NavBar() {
               bg: 'orange.300',
             }}
           >
-            귱!!
+            귷!!
           </Button>
         </Stack>
       </Flex>
